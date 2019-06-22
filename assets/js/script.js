@@ -4,12 +4,12 @@ $(function(){
     if (this.hash !== "") {
       event.preventDefault();
 
-      var mov = this.hash;
+      var movi = this.hash;
 
       $("html, body").animate({
-        scrollTop: $(mov).offset().top
+        scrollTop: $(movi).offset().top
       }, 1000, function(){
-        window.location.hash = mov;
+        window.location.hash = movi;
       });
     }
   });
